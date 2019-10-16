@@ -1,0 +1,6 @@
+
+Ssquid:S1854"7Remove this useless assignment to local variable "len".(ÊÅ¾¹øÿÿÿÿ
+psquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(²ØùŸ
+Dsquid:S1481"(Remove this unused "len" local variable.(ÊÅ¾¹øÿÿÿÿ
+’squid:S2681"{This statement will not be executed conditionally; only the first statement will be. The rest will execute unconditionally.(…€åµ
+2squid:S1643"Use a StringBuilder instead.(‰ÿé

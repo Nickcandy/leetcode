@@ -1,0 +1,11 @@
+
+5squid:S2178"Correct this "&" to "&&".(’ï¦»úÿÿÿÿ
+8squid:S1659"!Declare "min" on a separate line.(ù™Ç¡
+Osquid:S1197"8Move the array designator from the variable to the type.(ÌÓé
+Fsquid:S1066"/Merge this if statement with the enclosing one.(’şğ¹
+Fsquid:S1066"/Merge this if statement with the enclosing one.(›½¼½
+psquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(‚ÂÁ¸
+usquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(—Œ‰€ûÿÿÿÿ
+o
+squid:S135"YReduce the total number of break and continue statements in this loop to use at most one.(ÎÙü
+isquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 53 to the 15 allowed.(ÌÓé

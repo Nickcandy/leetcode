@@ -1,0 +1,4 @@
+
+Zsquid:UselessImportCheck"*Remove this unused import 'java.util.Set'.(ö²„¤şÿÿÿÿ8Æ‘ÖÁ-
+Dsquid:S1168"&Return an empty array instead of null.(¥¹ï8Š¾“×Á-
+lsquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(‡³ú8ü˜Ğ×Á-
