@@ -2,16 +2,42 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86950146-81d3-4366-aa9e-f8f726da1aa8" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/leet_145.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leet_39.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leet_539.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leet_563.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leet_778.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leet_1144.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leet_30.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leet_49.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leet_931.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leet_936.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/1/3176e0aa669178f13c1e0aa3ca9d567c77098e04" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/1/3176e0aa669178f13c1e0aa3ca9d567c77098e04" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/1/71ea8decebfa2580d0a911e74690d8f56edbd320" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/1/71ea8decebfa2580d0a911e74690d8f56edbd320" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/leetcode/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/leetcode/Knodes25.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetcode/Knodes25.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/leetcode/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetcode/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/leetcode/Solution_714.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetcode/Solution_714.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/leetcode/Solution15.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetcode/Solution15.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/leetcode/Solution17.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetcode/Solution17.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/leetcode/Solution19$ListNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetcode/Solution19$ListNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/leetcode/Solution19.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetcode/Solution19.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/leetcode/Solution20.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetcode/Solution20.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/leetcode/Solution21$ListNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetcode/Solution21$ListNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/leetcode/Solution21.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetcode/Solution21.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/leetcode/Solution217.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetcode/Solution217.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/leetcode/Solution28.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetcode/Solution28.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/leetcode/Solution61$ListNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetcode/Solution61$ListNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/leetcode/Solution61.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetcode/Solution61.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/leetcode/Solution_106$TreeNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetcode/Solution_106$TreeNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/leetcode/Solution_106.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetcode/Solution_106.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/leetcode/Solution_22.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetcode/Solution_22.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/leetcode/Solution_583.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetcode/Solution_583.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/leetcode/Solution_684.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetcode/Solution_684.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/leetcode/Solution_783$TreeNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetcode/Solution_783$TreeNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/leetcode/Solution_783.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetcode/Solution_783.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/leetcode/leet_654$Solution$TreeNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetcode/leet_654$Solution$TreeNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/leetcode/leet_654$Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetcode/leet_654$Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/leetcode/leet_654.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetcode/leet_654.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/leetcode/mergeKlist$ListNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetcode/mergeKlist$ListNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/leetcode/mergeKlist.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetcode/mergeKlist.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leet_714.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leet_714.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,48 +55,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="leet_714.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/leet_714.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="104" selection-start-line="8" selection-start-column="104" selection-end-line="8" selection-end-column="104" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="leet_39.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/leet_39.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="12" column="55" selection-start-line="12" selection-start-column="55" selection-end-line="12" selection-end-column="55" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="leet_32.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/leet_32.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="leet_145.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/leet_145.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="17" selection-start-line="17" selection-end-line="22" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="leet_539.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/leet_539.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -83,20 +67,35 @@
       <file leaf-file-name="leet_563.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/leet_563.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="15" selection-start-line="15" selection-end-line="16" selection-end-column="54" />
+            <state relative-caret-position="475">
+              <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="leet_778.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/leet_778.java">
+      <file leaf-file-name="leet_49.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/leet_49.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="640">
-              <caret line="41" column="45" lean-forward="true" selection-start-line="41" selection-start-column="45" selection-end-line="41" selection-end-column="45" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="285">
+              <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="leet_931.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/leet_931.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="11" column="76" selection-start-line="11" selection-start-column="76" selection-end-line="11" selection-end-column="76" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="leet_1144.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/leet_1144.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="532">
+              <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -104,8 +103,50 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" column="56" selection-start-line="5" selection-start-column="56" selection-end-line="5" selection-end-column="56" />
+            <state relative-caret-position="145">
+              <caret line="23" column="12" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="leet_30.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/leet_30.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="104">
+              <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="leet_4.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/leet_4.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="27" column="34" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="leet_936.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/leet_936.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="57">
+              <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="leet_552.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/leet_552.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -127,12 +168,13 @@
       <find>*</find>
       <find>]</find>
       <find>treenode</find>
+      <find>subst</find>
+      <find>heap</find>
     </findStrings>
     <replaceStrings>
       <replace />
       <replace>[i * 2 + 1]</replace>
       <replace>lists[i * 2 + 1]</replace>
-      <replace />
       <replace>{</replace>
       <replace>}</replace>
     </replaceStrings>
@@ -167,7 +209,6 @@
         <option value="$PROJECT_DIR$/src/leet_969.java" />
         <option value="$PROJECT_DIR$/src/leet_396.java" />
         <option value="$PROJECT_DIR$/src/leet_714.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/leet_39.java" />
         <option value="$PROJECT_DIR$/src/leet_32.java" />
         <option value="$PROJECT_DIR$/src/leet_145.java" />
@@ -175,6 +216,12 @@
         <option value="$PROJECT_DIR$/src/leet_227.java" />
         <option value="$PROJECT_DIR$/src/leet_563.java" />
         <option value="$PROJECT_DIR$/src/leet_778.java" />
+        <option value="$PROJECT_DIR$/src/leet_49.java" />
+        <option value="$PROJECT_DIR$/src/leet_931.java" />
+        <option value="$PROJECT_DIR$/src/leet_1144.java" />
+        <option value="$PROJECT_DIR$/src/leet_30.java" />
+        <option value="$PROJECT_DIR$/src/leet_936.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
       </list>
     </option>
   </component>
@@ -201,6 +248,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -219,13 +268,77 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="leet_32.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
             </path>
+            <path>
+              <item name="leetcode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="leet_39.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </path>
+            <path>
+              <item name="leetcode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="leet_51.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </path>
+            <path>
+              <item name="leetcode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="leet_91.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </path>
+            <path>
+              <item name="leetcode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="leet_145.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </path>
+            <path>
+              <item name="leetcode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="leet_396.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </path>
+            <path>
+              <item name="leetcode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="leet_539.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </path>
+            <path>
+              <item name="leetcode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="leet_552.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </path>
+            <path>
+              <item name="leetcode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="leet_563.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </path>
+            <path>
+              <item name="leetcode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="merge_list_21.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </path>
+            <path>
+              <item name="leetcode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="reverseKnodes_25.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </path>
+            <path>
+              <item name="leetcode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="SubstringWithK_992.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -279,44 +392,44 @@
       <workItem from="1560324098691" duration="612000" />
       <workItem from="1563182712806" duration="104953000" />
       <workItem from="1566359398310" duration="1189000" />
-      <workItem from="1570773227086" duration="20844000" />
+      <workItem from="1570773227086" duration="21872000" />
+      <workItem from="1571214895716" duration="39018000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="169548000" />
+    <option name="totallyTimeSpent" value="209594000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1176" extended-state="6" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <layout>
       <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="bottom" id="TODO" order="7" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info id="Image Layers" order="3" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="10" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="3" weight="0.45113525" />
-      <window_info anchor="bottom" id="Version Control" order="11" weight="0.32971373" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32971373" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27452025" />
-      <window_info anchor="bottom" id="SonarLint" order="0" />
       <window_info anchor="right" id="Database" order="6" />
-      <window_info anchor="right" id="SciView" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="2" sideWeight="0.4989605" weight="0.25" />
       <window_info id="UI Designer" order="4" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.45347118" />
+      <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.32791728" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info id="Image Layers" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="bottom" id="Version Control" order="11" weight="0.32971373" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.11816839" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32971373" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.34986594" />
+      <window_info anchor="bottom" id="SonarLint" order="0" />
+      <window_info anchor="bottom" id="Find" order="2" />
+      <window_info anchor="right" id="SciView" order="7" />
       <window_info anchor="right" id="Theme Preview" order="9" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.52517277" />
       <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="9" weight="0.32872656" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="2" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="right" id="Coverage" order="0" sideWeight="0.5010395" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="1" />
@@ -346,11 +459,17 @@
           <properties />
           <option name="timeStamp" value="75" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leet_30.java</url>
+          <line>21</line>
+          <properties />
+          <option name="timeStamp" value="89" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="88" />
+      <option name="time" value="92" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -358,61 +477,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/leet_714.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="104" selection-start-line="8" selection-start-column="104" selection-end-line="8" selection-end-column="104" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="56" selection-start-line="5" selection-start-column="56" selection-end-line="5" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/leet_39.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="12" column="55" selection-start-line="12" selection-start-column="55" selection-end-line="12" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/leet_714.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="104" selection-start-line="8" selection-start-column="104" selection-end-line="8" selection-end-column="104" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="56" selection-start-line="5" selection-start-column="56" selection-end-line="5" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/leet_39.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="55" selection-start-line="12" selection-start-column="55" selection-end-line="12" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/merge_klist_23.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1102">
@@ -588,13 +652,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/reverseKnodes_25.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/leet_654.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
@@ -608,45 +665,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/小李.java" />
-    <entry file="file://$PROJECT_DIR$/src/leet_4.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="477">
-          <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SubstringWithK_992.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="67" selection-start-line="12" selection-start-column="67" selection-end-line="12" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/leet_91.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/leet_684.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
           <caret line="19" column="68" selection-start-line="19" selection-start-column="68" selection-end-line="19" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/leet_29.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/leet_552.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="13" lean-forward="true" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -660,13 +682,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/leet_396.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/leet_714.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -674,34 +689,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/leet_778.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="56" selection-start-line="5" selection-start-column="56" selection-end-line="5" selection-end-column="56" />
+        <state relative-caret-position="203">
+          <caret line="18" column="47" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reverseKnodes_25.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SubstringWithK_992.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="12" column="67" selection-start-line="12" selection-start-column="67" selection-end-line="12" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/merge_list_21.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/leet_29.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/leet_32.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
-          <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/leet_539.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" selection-start-line="3" selection-end-line="12" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/leet_145.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" selection-start-line="17" selection-end-line="22" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -715,20 +744,110 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/leet_563.java">
+    <entry file="file://$PROJECT_DIR$/src/leet_51.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" selection-start-line="15" selection-end-line="16" selection-end-column="54" />
+        <state relative-caret-position="38">
+          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/leet_778.java">
+    <entry file="file://$PROJECT_DIR$/src/leet_91.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="640">
-          <caret line="41" column="45" lean-forward="true" selection-start-line="41" selection-start-column="45" selection-end-line="41" selection-end-column="45" />
+        <state relative-caret-position="171">
+          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/leet_145.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" selection-start-line="17" selection-end-line="22" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/leet_396.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/leet_539.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" selection-start-line="3" selection-end-line="12" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/leet_552.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/leet_563.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/leet_49.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/leet_931.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="76" selection-start-line="11" selection-start-column="76" selection-end-line="11" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/leet_1144.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/leet_30.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/leet_936.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="23" column="12" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/leet_4.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="27" column="34" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
         </state>
       </provider>
     </entry>

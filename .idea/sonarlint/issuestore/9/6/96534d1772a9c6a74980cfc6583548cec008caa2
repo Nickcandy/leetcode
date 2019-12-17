@@ -1,11 +1,11 @@
 
 usquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 24 to the 15 allowed.(Åå’œûÿÿÿÿ8Éè¡×¿-
+Asquid:S1659"#Declare "count" on a separate line.(Ş»÷ù8ÓµœğÁ-
+Osquid:S1481",Remove this unused "closest" local variable.(ãúˆ‰şÿÿÿÿ8ÓµœğÁ-
 usquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Åå’œûÿÿÿÿ8ÃÇØ«¿-
+Rsquid:S1066"/Merge this if statement with the enclosing one.(ğš²üÿÿÿÿ8ÓµœğÁ-
+=squid:S1659"Declare "j" on a separate line.(Ş»÷ù8ÓµœğÁ-
 usquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Åå’œûÿÿÿÿ8ÃÇØ«¿-
 Hsquid:S1659"%Declare "closest" on a separate line.(ãúˆ‰şÿÿÿÿ8ÓµœğÁ-
-=squid:S1659"Declare "j" on a separate line.(Ş»÷ù8ÓµœğÁ-
-Asquid:S1659"#Declare "count" on a separate line.(Ş»÷ù8ÓµœğÁ-
-?squid:S1659"!Declare "sum" on a separate line.(Ş»÷ù8ÓµœğÁ-
 @squid:S1659""Declare "last" on a separate line.(Ş»÷ù8ÓµœğÁ-
-Rsquid:S1066"/Merge this if statement with the enclosing one.(ğš²üÿÿÿÿ8ÓµœğÁ-
-Osquid:S1481",Remove this unused "closest" local variable.(ãúˆ‰şÿÿÿÿ8ÓµœğÁ-
+?squid:S1659"!Declare "sum" on a separate line.(Ş»÷ù8ÓµœğÁ-

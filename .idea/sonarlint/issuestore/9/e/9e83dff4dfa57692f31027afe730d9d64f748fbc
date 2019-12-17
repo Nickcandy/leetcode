@@ -1,0 +1,6 @@
+
+Osquid:S1172",Remove this unused method parameter "stamp".(»Èœíûÿÿÿÿ8ÛªƒíŞ-
+qsquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(®ºû¢ıÿÿÿÿ8ÔéìŞ-
+Ksquid:S1481"(Remove this unused "len" local variable.(¾£Íİùÿÿÿÿ8ÛªƒíŞ-
+Zsquid:S1854"7Remove this useless assignment to local variable "len".(¾£Íİùÿÿÿÿ8ÛªƒíŞ-
+Dsquid:S1168"&Return an empty array instead of null.(¥¹ï8é°¡ß-

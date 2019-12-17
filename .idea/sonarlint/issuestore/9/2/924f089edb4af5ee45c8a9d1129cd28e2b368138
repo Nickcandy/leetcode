@@ -1,4 +1,11 @@
 
-usquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(´‰û©ıÿÿÿÿ8µÛ¯¸Ä-
+Xsquid:UselessImportCheck".Remove this unused import 'java.util.HashSet'.(Ê‚êX8ƒŒ¸ ß-
+vsquid:S3973
+"XUse curly braces or indentation to denote the code conditionally executed by this "for".(–‡Ï8ğ¼ê¡ß-
 [
-squid:S106"9Replace this use of System.out or System.err by a logger.(¸™âÉúÿÿÿÿ8³Ù§¯È-
+squid:S106"9Replace this use of System.out or System.err by a logger.(ôÁ•Íùÿÿÿÿ8üó”£ß-
+[
+squid:S106"9Replace this use of System.out or System.err by a logger.(àÕêåşÿÿÿÿ8Àã­¡ß-
+Zsquid:UselessImportCheck"*Remove this unused import 'java.util.Set'.(ö²„¤şÿÿÿÿ8ƒŒ¸ ß-
+[
+squid:S106"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8°¬â£ß-
