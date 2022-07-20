@@ -14,6 +14,7 @@ steps:
       azurePowerShellVersion: LatestVersion
       Inline: |
         $DebugPreference='Continue'
+        $ErrorActionPreference='Continue'
         Connect-AzContainerRegistry -name lnxcr
         Connect-AzContainerRegistry -name lnxcr -username $(sp) -password $(pwd)
         
