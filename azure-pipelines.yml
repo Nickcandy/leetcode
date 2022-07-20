@@ -4,8 +4,8 @@
 # https://aka.ms/yaml
 
 pool:
-  vmImage: ubuntu-latest
-
+  vmImage: windows-2019
+  
 steps:
   - task: AzurePowerShell@5
     inputs:
