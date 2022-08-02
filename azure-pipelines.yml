@@ -7,13 +7,13 @@ pool:
   vmImage: windows-2019
 
 steps:
-  - task: AzurePowerShell@5
-    inputs:
-      ScriptType: 'InlineScript'
-      azureSubscription: 'lnxSC'
-      azurePowerShellVersion: LatestVersion
-      Inline: |
-        $ErrorActionPreference='Continue'
-        $DebugPreference='Continue'
-        Connect-AzContainerRegistry -name lnxcr -username $(sp) -password $(pwd)
+- task: AzurePowerShell@5
+  inputs:
+    azureSubscription: 'lnxSC'
+    ScriptType: 'InlineScript'
+    Inline: |
+      $ErrorActionPreference='Continue'
+      $DebugPreference='Continue'
+      Connect-AzContainerRegistry -name lnxcr -username $(sp) -password $(pwd)
+    pwsh: true
         
