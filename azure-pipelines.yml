@@ -11,9 +11,8 @@ steps:
   inputs:
     azureSubscription: 'lnxSC'
     ScriptType: 'InlineScript'
-    Inline: |
-      $ErrorActionPreference='Continue'
-      $DebugPreference='Continue'
-      Connect-AzContainerRegistry -name lnxcr -username $(sp) -password $(pwd)
+    azurePowerShellVersion: LatestVersion
     pwsh: true
+    Inline: |
+      Connect-AzContainerRegistry -name lnxcr -username $(sp) -password $(pwd)
         
