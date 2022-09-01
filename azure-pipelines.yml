@@ -60,27 +60,14 @@ stages:
           ScriptType: InlineScript
           azurePowerShellVersion: LatestVersion
           Inline: |
-            Connect-AzContainerRegistry -name $(ACRAccount)
-            docker pull $(ACRServer)/internal/azure-powershell:${{parameters.azVersion}}-$(image)
-            docker run -i $(ACRServer)/internal/azure-powershell:${{parameters.azVersion}}-$(image) pwsh -Command "(Get-Module Az -ListAvailable).Version.ToString()"
-            $actualVersion=$(docker run -i $(ACRServer)/internal/azure-powershell:${{parameters.azVersion}}-$(image) pwsh -Command "(Get-Module Az -ListAvailable).Version.ToString()")
+            docker pull mcr.microsoft.com/internal/azure-powershell:${{parameters.azVersion}}-$(image)
+            $actualVersion=$(docker run -i mcr.microsoft.com/internal/azure-powershell:${{parameters.azVersion}}-$(image) pwsh -Command "(Get-Module Az -ListAvailable).Version.ToString()")
             if ($actualVersion -eq "${{parameters.azVersion}}")
             {
-              Write-Host "Docker image contains expected Az version."
+              Write-Host "MCR image contains expected Az version."
             }
             else
             {
               Write-Error "Az module or its version is not found"
             }
-          failOnStandardError: true
-      - task: AzurePowerShell@5
-        displayName: Smoke Test - $(image)
-        condition: eq(${{parameters.latest}}, true)
-        inputs:
-          azureSubscription: $(AzureSubscription)
-          ScriptType: InlineScript
-          azurePowerShellVersion: LatestVersion
-          Inline: |
-              $CommandString='$SecuredPassword=ConvertTo-SecureString -Force -AsPlainText "'+ $(SPPassword) + '";$Credential = New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList '+ $(ApplicationId)+', $SecuredPassword ;Connect-AzAccount -ServicePrincipal -TenantId '+ $(TenantId) + ' -Credential $Credential -Subscription ' + $(SubscriptionId) + ';(Invoke-WebRequest -Uri "' + $(SmokeTestUrl) + '").Content | Invoke-Expression'
-              docker run -i $(ACRServer)/internal/azure-powershell:${{parameters.azVersion}}-$(image) pwsh -Command $CommandString
           failOnStandardError: true
