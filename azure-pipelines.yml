@@ -61,7 +61,7 @@ stages:
           azureSubscription: $(AzureSubscription)
           Inline: |
             docker pull mcr.microsoft.com/internal/azure-powershell:${{parameters.azVersion}}-$(image)
-            $actualVersion=$(docker run -i mcr.microsoft.com/internal/azure-powershell:${{parameters.azVersion}}-$(image) pwsh -Command "(Get-Module Az -ListAvailable).Version.ToString()")
+            $actualVersion=$(docker run -i mcr.microsoft.com/azure-powershell:${{parameters.azVersion}}-$(image) pwsh -Command "(Get-Module Az -ListAvailable).Version.ToString()")
             if ($actualVersion -eq "${{parameters.azVersion}}")
             {
               Write-Host "MCR image contains expected Az version."
