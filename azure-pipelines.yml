@@ -3,16 +3,84 @@
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
 
-pool:
-  vmImage: windows-2019
+name: MCR Images Verification
 
-steps:
-- task: AzurePowerShell@5
-  inputs:
-    azureSubscription: 'lnxSC'
-    ScriptType: 'InlineScript'
-    azurePowerShellVersion: LatestVersion
-    pwsh: true
-    Inline: |
-      Connect-AzContainerRegistry -name lnxcr -username $(sp) -password $(pwd)
-        
+parameters:
+  - name: latest
+    displayName: Is latest Az?
+    type: boolean
+    default: false
+  - name: azVersion
+    displayName: Az version
+    type: string
+    default: 8.0.0
+  - name: imageList
+    type: object
+    default:
+      - ubuntu-18.04
+      - ubuntu-20.04
+      - ubuntu-22.04     
+      - mariner-1
+      - mariner-2
+      - debian-10
+      - debian-11
+      - centos-7
+      - alpine-3.13
+      - alpine-3.14
+
+pool:
+  vmImage: ubuntu-20.04
+  
+stages:  
+- stage: Validation
+  jobs:
+    - job: generator
+      steps:
+      - powershell: |
+          $list='${{Converttojson(parameters.imageList)}}'|ConvertFrom-Json
+          foreach ($name in $list){
+            $MatrixStr="$MatrixStr,'" + $name.Replace("-","_") + "':{'image':'$name'}"
+          }
+          $MatrixStr=$MatrixStr.Substring(1)
+          Write-Host "##vso[task.setVariable variable=legs;isOutput=true]{$MatrixStr}"
+        name: mtrx
+    - job: 
+      timeoutInMinutes: 90
+      displayName: "TestJob"
+      dependsOn: generator
+      strategy:
+        matrix: $[ dependencies.generator.outputs['mtrx.legs'] ]
+        maxParallel: 5
+      steps:
+      - checkout: none
+      - task: AzurePowerShell@5
+        displayName: Verify images - $(image)
+        inputs:
+          azureSubscription: $(AzureSubscription)
+          ScriptType: InlineScript
+          azurePowerShellVersion: LatestVersion
+          Inline: |
+            Connect-AzContainerRegistry -name $(ACRAccount)
+            docker pull $(ACRServer)/internal/azure-powershell:${{parameters.azVersion}}-$(image)
+            docker run -i $(ACRServer)/internal/azure-powershell:${{parameters.azVersion}}-$(image) pwsh -Command "(Get-Module Az -ListAvailable).Version.ToString()"
+            $actualVersion=$(docker run -i $(ACRServer)/internal/azure-powershell:${{parameters.azVersion}}-$(image) pwsh -Command "(Get-Module Az -ListAvailable).Version.ToString()")
+            if ($actualVersion -eq "${{parameters.azVersion}}")
+            {
+              Write-Host "Docker image contains expected Az version."
+            }
+            else
+            {
+              Write-Error "Az module or its version is not found"
+            }
+          failOnStandardError: true
+      - task: AzurePowerShell@5
+        displayName: Smoke Test - $(image)
+        condition: eq(${{parameters.latest}}, true)
+        inputs:
+          azureSubscription: $(AzureSubscription)
+          ScriptType: InlineScript
+          azurePowerShellVersion: LatestVersion
+          Inline: |
+              $CommandString='$SecuredPassword=ConvertTo-SecureString -Force -AsPlainText "'+ $(SPPassword) + '";$Credential = New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList '+ $(ApplicationId)+', $SecuredPassword ;Connect-AzAccount -ServicePrincipal -TenantId '+ $(TenantId) + ' -Credential $Credential -Subscription ' + $(SubscriptionId) + ';(Invoke-WebRequest -Uri "' + $(SmokeTestUrl) + '").Content | Invoke-Expression'
+              docker run -i $(ACRServer)/internal/azure-powershell:${{parameters.azVersion}}-$(image) pwsh -Command $CommandString
+          failOnStandardError: true
