@@ -56,7 +56,6 @@ stages:
       - task: AzurePowerShell@5
         displayName: Verify images - $(image)
         inputs:
-          azureSubscription: $(AzureSubscription)
           ScriptType: InlineScript
           azurePowerShellVersion: LatestVersion
           Inline: |
