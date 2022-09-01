@@ -6,10 +6,6 @@
 name: MCR Images Verification
 
 parameters:
-  - name: latest
-    displayName: Is latest Az?
-    type: boolean
-    default: false
   - name: azVersion
     displayName: Az version
     type: string
