@@ -1,7 +1,3 @@
-# Starter pipeline
-# Start with a minimal pipeline that you can customize to build and deploy your code.
-# Add steps that build, run tests, deploy, and more:
-# https://aka.ms/yaml
 
 name: MCR Images Verification
 
@@ -49,13 +45,12 @@ stages:
         maxParallel: 5
       steps:
       - checkout: none
-      - task: AzurePowerShell@5
+      - task: PowerShell@2
         displayName: Verify images - $(image)
         inputs:
-          ScriptType: InlineScript
-          azurePowerShellVersion: LatestVersion
-          azureSubscription: $(AzureSubscription)
-          Inline: |
+          failOnStderr: true
+          targetType: 'inline'
+          script: |
             docker pull mcr.microsoft.com/azure-powershell:${{parameters.azVersion}}-$(image)
             $actualVersion=$(docker run -i mcr.microsoft.com/azure-powershell:${{parameters.azVersion}}-$(image) pwsh -Command "(Get-Module Az -ListAvailable).Version.ToString()")
             if ($actualVersion -eq "${{parameters.azVersion}}")
@@ -66,4 +61,3 @@ stages:
             {
               Write-Error "Az module or its version is not found"
             }
-          failOnStandardError: true
