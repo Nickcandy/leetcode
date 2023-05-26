@@ -4,11 +4,5 @@ jobs:
     pool:
       vmImage: ubuntu-20.04
     steps:
-    - task: AzurePowerShell@5
-      inputs:
-        azureSubscription: 'lnxSC'
-        ScriptType: 'InlineScript'
-        azurePowerShellVersion: 'LatestVersion'
-        Inline: |
-           get-module az.resources -ListAvailable
+      
         
