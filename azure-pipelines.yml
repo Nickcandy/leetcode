@@ -4,9 +4,13 @@ jobs:
     pool:
       vmImage: ubuntu-20.04
     steps:
-      - task: PowerShell@2
-        inputs:
-          targetType: 'inline'
-          script: |
-            Write-Host "Hello World"
-        
+    - task: AzurePowerShell@5
+      displayName: 'Push packages to storage account'
+      inputs:
+        azureSubscription: 'lnxtest'
+        ScriptType: InlineScript
+        Inline: |
+          $context = New-AzStorageContext -StorageAccountName "acrteststorageaccount"
+          ./leetcode.iml | Set-AzStorageBlobContent -Container test -Context $context -Force
+        azurePowerShellVersion: LatestVersion
+          
