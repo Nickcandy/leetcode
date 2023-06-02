@@ -11,6 +11,6 @@ jobs:
         ScriptType: InlineScript
         Inline: |
           $context = New-AzStorageContext -StorageAccountName "acrteststorageaccount"
-          ./leetcode.iml | Set-AzStorageBlobContent -Container test -Context $context -Force
+          Set-AzStorageBlobContent -Container test -Context $context -File "./leetcode.iml" -Force
         azurePowerShellVersion: LatestVersion
           
