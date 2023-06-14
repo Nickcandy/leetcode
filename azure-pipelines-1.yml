@@ -9,20 +9,47 @@ trigger:
 pool:
   vmImage: ubuntu-latest
 
-stages:
-- stage: OOBRelease
-  jobs:
-  - job:
-    steps:
-    - script: echo Hello, world!
-      displayName: 'Run a one-line script'
-- stage: test
-  jobs:
-  - deployment: 
-    environment: test
-    strategy:
-      # Default deployment strategy, more coming...
-      runOnce:
-        deploy:
-          steps:
-          - script: echo my first deployment
+steps:
+    - task: AzurePowerShell@5
+      inputs:
+          azureSubscription: 'azureps-infra-sp'
+          ScriptType: 'InlineScript'
+          azurePowerShellVersion: 'LatestVersion'
+          inline: |
+              Set-AzContext -Tenant 72f988bf-86f1-41af-91ab-2d7cd011db47 -SubscriptionId 6b085460-5f21-477e-ba44-1035046e9101
+              $Token = Get-AzKeyVaultSecret -VaultName azurepsdev -Name azpsbot-github-pat -AsPlainText
+              git config user.email "65331932+azure-powershell-bot@users.noreply.github.com"
+              git config user.name "azure-powershell-bot"
+              $owner = "Azure"
+              $repo = "azure-powershell"
+              $tagName = "v1.0.0"
+              $url = "https://api.github.com/repos/$owner/$repo/releases"
+              $releases = Invoke-RestMethod -Uri $url -Method Get -Headers @{
+                  "Authorization" = "Bearer $Token"
+                  "Content-Type" = "application/json"
+                  "User-Agent" = "powershell"
+              }
+              $draftRelease = $releases | Where-Object { $_.tag_name -eq $tagName} | Select-Object -First 1
+              if ($draftRelease) {
+                  $releaseId = $draftRelease.id
+                  $url = "https://api.github.com/repos/$owner/$repo/releases/$releaseId"
+                  $data = @{
+                      tag_name = $tagname
+                      name = "success"
+                      prerelease = $true
+                      make_latest = $false
+                  } | ConvertTo-Json
+                  $response = Invoke-RestMethod -Uri $url -Method Patch -Headers @{
+                      "Authorization" = "Bearer $Token"
+                      "Content-Type" = "application/json"
+                      "User-Agent" = "powershell"
+                  } -Body $data
+                  if ($response.id) {
+                      Write-Host "Draft release updated successfully. Release ID: $($response.id)"
+                  } else {
+                      Write-Host "Failed to update draft release. Error: $($response.message)"
+                  }
+              } else {
+                  Write-Host "No draft release found for the specified tag."
+              }
+
