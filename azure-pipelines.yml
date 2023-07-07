@@ -1,23 +1,30 @@
+parameters:
+- name: ServiceName
+  displayName: Service to OOB release
+  type: string
+  default: Databricks
+- name: BumpUpVersion
+  displayName: Need BumpUpVersion
+  type: boolean
+  default: true
 variables:
-- name: one
-  value: initialValue 
 - name: BumpUpBranch
   value: none 
-steps:
-- task: PowerShell@2
-  inputs:
-    targetType: 'inline'
-    script: |
-      if ($false -eq $true) {
-          Write-Host "##vso[task.setvariable variable=BumpUpBranch]codeoob"
-      } else {
-          Write-Host "##vso[task.setvariable variable=BumpUpBranch]bbbbbbbbbbbbbb"
-      }
-      echo $(BumpUpBranch) 
-
-- task: PowerShell@2
-  inputs:
-    targetType: 'inline'
-    script: |
-       Write-Host ${{ variables.BumpUpBranch }}
-       echo $(BumpUpBranch) 
+stages:
+- stage: OOBRelease
+  displayName: OOBRelease
+  jobs:
+  - job: BumpUpVersion
+    timeoutInMinutes: 180
+    pool: pool-windows-2019
+    steps:
+    - task: PowerShell@2
+      displayName: get bump up branch
+      inputs:
+        targetType: 'inline'
+        script: |
+          if (${{ parameters.BumpUpVersion }} -eq $true) {
+              Write-Host "##vso[task.setvariable variable=BumpUpBranch]codeoob/${{ parameters.ServiceName }}"
+          } else {
+              Write-Host "##vso[task.setvariable variable=BumpUpBranch]none"
+          }
