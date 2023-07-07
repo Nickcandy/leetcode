@@ -9,7 +9,7 @@ jobs:
         targetType: 'inline'
         script: |
           if ($false -eq $true) {
-              Write-Host "##vso[task.setvariable variable=BumpUpBranch]codeoob/${{ parameters.ServiceName }}"
+              Write-Host "##vso[task.setvariable variable=BumpUpBranch]codeoob"
           } else {
               Write-Host "##vso[task.setvariable variable=BumpUpBranch]none"
           }
