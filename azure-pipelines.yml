@@ -1,5 +1,5 @@
 variables:
-    name: a
+  - name: happy
     value: aaa
 jobs:
   - job: OOBRelease
@@ -8,5 +8,5 @@ jobs:
       inputs:
         targetType: 'inline'
         script: |
-          echo "##vso[task.setvariable variable=a]bbb"
-          echo $(a)
+          echo "##vso[task.setvariable variable=happy]bbb"
+          write-host $(happy)
