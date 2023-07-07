@@ -1,6 +1,5 @@
 variables:
-- name: BumpUpBranch
-  value: none 
+   BumpUpBranch: none 
 jobs:
   - job: OOBRelease
     steps:
