@@ -1,6 +1,6 @@
 variables:
-  - name: happy
-    value: aaa
+- name: BumpUpBranch
+  value: none 
 jobs:
   - job: OOBRelease
     steps:
@@ -8,5 +8,9 @@ jobs:
       inputs:
         targetType: 'inline'
         script: |
-          echo "##vso[task.setvariable variable=happy]bbb"
-          write-host $(happy)
+          if ($false -eq $true) {
+              Write-Host "##vso[task.setvariable variable=BumpUpBranch]codeoob/${{ parameters.ServiceName }}"
+          } else {
+              Write-Host "##vso[task.setvariable variable=BumpUpBranch]none"
+          }
+          write-host $(BumpUpBranch)
