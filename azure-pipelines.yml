@@ -28,16 +28,3 @@ stages:
           } else {
               Write-Host "##vso[task.setvariable variable=BumpUpBranch]hello"
           }
-- stage: Codesign
-  dependsOn: OOBRelease
-  jobs:
-  - job: BumpUpVersion
-    timeoutInMinutes: 180
-    pool: pool-windows-2019
-    steps:
-    - task: PowerShell@2
-      displayName: 1111
-      inputs:
-        targetType: 'inline'
-        script: |
-            Write-Host $(BumpUpBranch)
