@@ -40,4 +40,4 @@ stages:
       inputs:
         targetType: 'inline'
         script: |
-            Write-Host $(BumpUpVersion)
+            Write-Host $(BumpUpBranch)
