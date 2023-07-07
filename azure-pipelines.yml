@@ -32,10 +32,10 @@ stages:
   - job: output
     dependsOn: BumpUpVersion
     variables:
-      BumpUpBranch: $[stageDependencies.BumpUpVersion.outputs['bump.BumpUpBranch']]
+      BumpUpBranch: $[dependencies.BumpUpVersion.outputs['bump.BumpUpBranch']]
     steps:
     - task: PowerShell@2
-      displayName: get bump up branch
+      displayName: output
       inputs:
         targetType: 'inline'
         script: |
