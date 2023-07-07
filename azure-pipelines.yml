@@ -7,12 +7,11 @@ parameters:
   displayName: Need BumpUpVersion
   type: boolean
   default: true
-variables:
-- name: BumpUpBranch
-  value: none 
 stages:
 - stage: OOBRelease
   displayName: OOBRelease
+  variables:
+    BumpUpBranch: none 
   jobs:
   - job: BumpUpVersion
     timeoutInMinutes: 180
@@ -26,18 +25,13 @@ stages:
           if (${{ parameters.BumpUpVersion }} -eq $true) {
               Write-Host "##vso[task.setvariable variable=BumpUpBranch]codeoob/${{ parameters.ServiceName }}"
           } else {
-              Write-Host "##vso[task.setvariable variable=BumpUpBranch]default"
+              Write-Host "##vso[task.setvariable variable=BumpUpBranch]hello"
           }
-- stage: Codesign
-  dependsOn: OOBRelease
-  jobs:
-  - job: BumpUpVersion
-    timeoutInMinutes: 180
-    pool: pool-windows-2019
+  - job: output
     steps:
     - task: PowerShell@2
-      displayName: 1111
+      displayName: get bump up branch
       inputs:
         targetType: 'inline'
         script: |
-            Write-Host $(BumpUpVersion)
+          Write-Host $(BumpUpBranch)
