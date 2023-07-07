@@ -18,17 +18,20 @@ stages:
     pool: pool-windows-2019
     steps:
     - task: PowerShell@2
+      name: bump
       displayName: get bump up branch
       inputs:
         targetType: 'inline'
         script: |
           if (${{ parameters.BumpUpVersion }} -eq $true) {
-              Write-Host "##vso[task.setvariable variable=BumpUpBranch]codeoob/${{ parameters.ServiceName }}"
+              Write-Host "##vso[task.setvariable variable=BumpUpBranch;isOutput=true]codeoob/${{ parameters.ServiceName }}"
           } else {
-              Write-Host "##vso[task.setvariable variable=BumpUpBranch]hello"
+              Write-Host "##vso[task.setvariable variable=BumpUpBranch;isOutput=true]hello"
           }
   - job: output
     dependsOn: BumpUpVersion
+    variables:
+      BumpUpBranch: $[stageDependencies.BumpUpVersion.outputs['bump.BumpUpBranch']]
     steps:
     - task: PowerShell@2
       displayName: get bump up branch
