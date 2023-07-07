@@ -11,6 +11,6 @@ jobs:
           if ($false -eq $true) {
               Write-Host "##vso[task.setvariable variable=BumpUpBranch]codeoob"
           } else {
-              Write-Host "##vso[task.setvariable variable=BumpUpBranch]none"
+              Write-Host "##vso[task.setvariable variable=BumpUpBranch]bbbbbbbbbbbbb"
           }
           write-host $(BumpUpBranch)
