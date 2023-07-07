@@ -28,6 +28,7 @@ stages:
               Write-Host "##vso[task.setvariable variable=BumpUpBranch]hello"
           }
   - job: output
+    dependsOn: BumpUpVersion
     steps:
     - task: PowerShell@2
       displayName: get bump up branch
