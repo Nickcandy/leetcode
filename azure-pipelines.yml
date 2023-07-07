@@ -32,6 +32,8 @@ stages:
 - stage: output
   variables:
     BumpUpBranch: $[stageDependencies.OOBRelease.BumpUpVersion.outputs['bump.BumpUpBranch']]
+  jobs:
+  - job: output 
     steps:
     - task: PowerShell@2
       displayName: output
