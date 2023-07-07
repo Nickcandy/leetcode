@@ -10,8 +10,6 @@ parameters:
 stages:
 - stage: OOBRelease
   displayName: OOBRelease
-  variables:
-    BumpUpBranch: none 
   jobs:
   - job: BumpUpVersion
     timeoutInMinutes: 180
@@ -26,7 +24,7 @@ stages:
           if (${{ parameters.BumpUpVersion }} -eq $true) {
               Write-Host "##vso[task.setvariable variable=BumpUpBranch;isOutput=true]codeoob/${{ parameters.ServiceName }}"
           } else {
-              Write-Host "##vso[task.setvariable variable=BumpUpBranch;isOutput=true]hello"
+              Write-Host "##vso[task.setvariable variable=BumpUpBranch;isOutput=true] hello"
           }
   - job: output
     dependsOn: BumpUpVersion
