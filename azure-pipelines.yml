@@ -26,7 +26,7 @@ stages:
           if (${{ parameters.BumpUpVersion }} -eq $true) {
               Write-Host "##vso[task.setvariable variable=BumpUpBranch]codeoob/${{ parameters.ServiceName }}"
           } else {
-              Write-Host "##vso[task.setvariable variable=BumpUpBranch]hello"
+              Write-Host "##vso[task.setvariable variable=BumpUpBranch]default"
           }
 - stage: Codesign
   dependsOn: OOBRelease
