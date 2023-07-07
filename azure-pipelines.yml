@@ -23,15 +23,16 @@ stages:
       inputs:
         targetType: 'inline'
         script: |
-
-          Write-Host ${{ parameters.BumpUpVersion }}
-          if (${{ parameters.BumpUpVersion }} -eq "true" ) {
+          Write-Host (${{ parameters.BumpUpVersion }} -eq $True )
+          if (${{ parameters.BumpUpVersion }} -eq $True ) {
               $str = "codeoob/${{ parameters.ServiceName }}"
+              Write-Host $str
           } else {
               $str = "hello"
+              Write-Host $str
           }
           Write-Host "##vso[task.setvariable variable=BumpUpBranch;isOutput=true]$str"
-          Write-Host ${{ parameters.BumpUpVersion }}.gettype()
+          Write-Host $str
 - stage: output
   variables:
     BumpUpBranch: $[stageDependencies.OOBRelease.BumpUpVersion.outputs['bump.BumpUpBranch']]
