@@ -1,16 +1,12 @@
-trigger: none
+variables:
+    name: a
+    value: aaa
 jobs:
-  - job: test
-    pool:
-      vmImage: ubuntu-20.04
+  - job: OOBRelease
     steps:
-    - task: AzurePowerShell@5
-      displayName: 'Push packages to storage account'
+    - task: PowerShell@2
       inputs:
-        azureSubscription: 'lnxtest'
-        ScriptType: InlineScript
-        Inline: |
-          $context = New-AzStorageContext -StorageAccountName "acrteststorageaccount"
-          Set-AzStorageBlobContent -Container test -Context $context -File "./leetcode.iml" -Force
-        azurePowerShellVersion: LatestVersion
-          
+        targetType: 'inline'
+        script: |
+          echo "##vso[task.setvariable variable=a]bbb"
+          echo $(a)
