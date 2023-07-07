@@ -23,7 +23,10 @@ stages:
       inputs:
         targetType: 'inline'
         script: |
-          if (${{ parameters.BumpUpVersion }} -eq "True" ) {
+          $a = ${{ parameters.BumpUpVersion }}
+          Write-Host $a.gettype()
+          Write-Host $a
+          if (${{ parameters.BumpUpVersion }} -eq "true" ) {
               $str = "codeoob/${{ parameters.ServiceName }}"
           } else {
               $str = "hello"
