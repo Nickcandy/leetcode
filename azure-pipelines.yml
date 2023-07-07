@@ -23,7 +23,7 @@ stages:
       inputs:
         targetType: 'inline'
         script: |
-          if (${{ parameters.BumpUpVersion }} -eq $true) {
+          if (${{ parameters.BumpUpVersion }}) {
               $str = "codeoob/${{ parameters.ServiceName }}"
           } else {
               $str = "hello"
