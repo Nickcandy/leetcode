@@ -29,10 +29,9 @@ stages:
               $str = "hello"
           }
           Write-Host "##vso[task.setvariable variable=BumpUpBranch;isOutput=true]$str"
-  - job: output
-    dependsOn: BumpUpVersion
-    variables:
-      BumpUpBranch: $[dependencies.BumpUpVersion.outputs['bump.BumpUpBranch']]
+- stage: output
+  variables:
+    BumpUpBranch: $[stageDependencies.OOBRelease.BumpUpVersion.outputs['bump.BumpUpBranch']]
     steps:
     - task: PowerShell@2
       displayName: output
