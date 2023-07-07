@@ -6,7 +6,7 @@ parameters:
 - name: BumpUpVersion
   displayName: Need BumpUpVersion
   type: boolean
-  default: $true
+  default: true
 stages:
 - stage: OOBRelease
   displayName: OOBRelease
