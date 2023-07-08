@@ -33,7 +33,7 @@ stages:
               $str = "hello"
               Write-Host $str
           }
-          Write-Host "##vso[task.setvariable variable=BumpUpBranch;isOutput=true]$str"
+          Write-Host "##vso[task.setvariable variable=BumpUpBranch;isOutput=true]hello"
           Write-Host $str
 - stage: output
   variables:
