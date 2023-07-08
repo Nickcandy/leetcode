@@ -43,6 +43,7 @@ stages:
     steps:
     - task: PowerShell@2
       displayName: output
+      condition: and(succeeded(), ne('$(BumpUpBranch)', 'hello'))
       inputs:
         targetType: 'inline'
         script: |
