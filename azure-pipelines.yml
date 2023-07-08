@@ -23,10 +23,10 @@ stages:
       inputs:
         targetType: 'inline'
         script: |
-          $a = ${{ parameters.BumpUpVersion }}
+          $a = $${{ parameters.BumpUpVersion }}
           Write-Host $a
-          Write-Host (${{ parameters.BumpUpVersion }} -eq ${{True}} )
-          if (${{ parameters.BumpUpVersion }} -eq ${{true}} ) {
+          Write-Host ($${{ parameters.BumpUpVersion }} -eq $True} )
+          if ($${{ parameters.BumpUpVersion }} -eq $true ) {
               $str = "codeoob/${{ parameters.ServiceName }}"
               Write-Host $str
           } else {
