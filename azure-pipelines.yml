@@ -23,4 +23,5 @@ stages:
         targetType: 'inline'
         script: |
            Write-Host $(BumpUpBranch)
-           Write-Host $(BumpUpBranch) -eq 'true'
+           Write-Host ($(BumpUpBranch) -eq 'true')
+      condition: and(succeeded(), eq('$(BumpUpBranch)', 'true'))
