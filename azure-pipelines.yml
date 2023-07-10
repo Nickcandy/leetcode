@@ -21,3 +21,10 @@ stages:
         script: |
            Write-Host "hello"
       condition: ne('${{ parameters.OOBBranch }}', 'none'))
+    - task: PowerShell@2
+      name: test1
+      inputs:
+        targetType: 'inline'
+        script: |
+           Write-Host "hello2"
+      condition: eq('${{ parameters.OOBBranch }}', 'none'))
