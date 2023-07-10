@@ -1,21 +1,12 @@
-parameters:
-- name: ServiceName
-  displayName: Service to OOB release
-  type: string
-  default: Databricks
-- name: BumpUpVersion
-  displayName: Need BumpUpVersion
-  type: boolean
-  default: true
 stages:
 - stage: OOBRelease
   displayName: OOBRelease
-  variables:
-    name: BumpUpBranch
   jobs:
   - job: BumpUpVersion
     timeoutInMinutes: 180
     pool: pool-windows-2019
+    variables:
+      BumpUpBranch: hello
     steps:
     - task: PowerShell@2
       name: bump
@@ -23,28 +14,12 @@ stages:
       inputs:
         targetType: 'inline'
         script: |
-          $a = $${{ parameters.BumpUpVersion }}
-          Write-Host $a
-          Write-Host ($${{ parameters.BumpUpVersion }} -eq $True )
-          if ($${{ parameters.BumpUpVersion }} -eq $true ) {
-              $str = "codeoob/${{ parameters.ServiceName }}"
-              Write-Host $str
-          } else {
-              $str = "hello"
-              Write-Host $str
+          if ($(BumpUpBranch) -eq 'hello'){
+            Write-Host "##vso[task.setvariable variable=BumpUpBranch]true"
           }
-          Write-Host "##vso[task.setvariable variable=BumpUpBranch;isOutput=true]hello"
-          Write-Host $str
-- stage: output
-  variables:
-    BumpUpBranch: $[stageDependencies.OOBRelease.BumpUpVersion.outputs['bump.BumpUpBranch']]
-  jobs:
-  - job: output 
-    steps:
     - task: PowerShell@2
-      displayName: output
-      condition: and(succeeded(), ne(variables.BumpUpBranch, 'hello'))
+      name: test
       inputs:
         targetType: 'inline'
         script: |
-          Write-Host $(BumpUpBranch)
+           Write-Host $(BumpUpBranch)
