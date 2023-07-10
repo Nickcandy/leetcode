@@ -9,19 +9,10 @@ stages:
       BumpUpBranch: hello
     steps:
     - task: PowerShell@2
-      name: bump
-      displayName: get bump up branch
-      inputs:
-        targetType: 'inline'
-        script: |
-          if ('$(BumpUpBranch)' -eq 'hello'){
-            Write-Host "##vso[task.setvariable variable=BumpUpBranch]true"
-          }
-    - task: PowerShell@2
       name: test
       inputs:
         targetType: 'inline'
         script: |
            Write-Host $(BumpUpBranch)
            Write-Host ($(BumpUpBranch) -eq 'true')
-      condition: and(succeeded(), eq('$(BumpUpBranch)', 'true'))
+      condition: and(succeeded(), eq(variables['BumpUpBranch'], 'hello'))
