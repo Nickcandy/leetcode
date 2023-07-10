@@ -17,8 +17,9 @@ stages:
            Write-Host ('$(BumpUpBranch)' -eq 'hello')
            echo "##vso[task.setvariable variable=BumpUpBranch]hello"
            Write-Host $(BumpUpBranch)
+           Write-Host $[variables.BumpUpBranch]
            Write-Host ('$(BumpUpBranch)' -eq 'hello')
-           Write-Host ('$[variables.BumpUpBranch]' -eq 'hello')
+           Write-Host ($[variables.BumpUpBranch] -eq 'hello')
     - task: PowerShell@2
       name: test
       inputs:
