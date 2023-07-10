@@ -23,7 +23,7 @@ stages:
            Write-Host ${{ parameters.OOBBranch }}
       condition: ne('${{ parameters.OOBBranch }}', 'none')
     - task: PowerShell@2
-      name: test1
+      name: test2
       inputs:
         targetType: 'inline'
         script: |
