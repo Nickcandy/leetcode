@@ -20,6 +20,7 @@ stages:
         targetType: 'inline'
         script: |
            Write-Host "not equal none"
+           Write-Host ${{ parameters.OOBBranch }}
       condition: ne('${{ parameters.OOBBranch }}', 'none'))
     - task: PowerShell@2
       name: test1
@@ -27,4 +28,5 @@ stages:
         targetType: 'inline'
         script: |
            Write-Host "equal none"
+           Write-Host ${{ parameters.OOBBranch }}
       condition: eq('${{ parameters.OOBBranch }}', 'none'))
