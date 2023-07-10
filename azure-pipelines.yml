@@ -14,7 +14,7 @@ stages:
       inputs:
         targetType: 'inline'
         script: |
-          if ($(BumpUpBranch) -eq 'hello'){
+          if ('$(BumpUpBranch)' -eq 'hello'){
             Write-Host "##vso[task.setvariable variable=BumpUpBranch]true"
           }
     - task: PowerShell@2
@@ -23,3 +23,4 @@ stages:
         targetType: 'inline'
         script: |
            Write-Host $(BumpUpBranch)
+           Write-Host $(BumpUpBranch) -eq 'true'
