@@ -21,7 +21,7 @@ stages:
         script: |
            Write-Host "not equal none"
            Write-Host ${{ parameters.OOBBranch }}
-      condition: ne('${{ parameters.OOBBranch }}', 'none'))
+      condition: ne('${{ parameters.OOBBranch }}', 'none')
     - task: PowerShell@2
       name: test1
       inputs:
@@ -29,4 +29,4 @@ stages:
         script: |
            Write-Host "equal none"
            Write-Host ${{ parameters.OOBBranch }}
-      condition: eq('${{ parameters.OOBBranch }}', 'none'))
+      condition: eq('${{ parameters.OOBBranch }}', 'none')
