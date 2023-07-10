@@ -6,13 +6,23 @@ stages:
     timeoutInMinutes: 180
     pool: pool-windows-2019
     variables:
-      BumpUpBranch: hello
+      BumpUpBranch: test
     steps:
+    - task: PowerShell@2
+      name: test1
+      inputs:
+        targetType: 'inline'
+        script: |
+           Write-Host $(BumpUpBranch)
+           Write-Host ('$(BumpUpBranch)' -eq 'hello')
+           echo "##vso[task.setvariable variable=BumpUpBranch]hello"
+           Write-Host $(BumpUpBranch)
+           Write-Host ('$(BumpUpBranch)' -eq 'hello')
     - task: PowerShell@2
       name: test
       inputs:
         targetType: 'inline'
         script: |
            Write-Host $(BumpUpBranch)
-           Write-Host ('$(BumpUpBranch)' -eq 'true')
+           Write-Host ('$(BumpUpBranch)' -eq 'hello')
       condition: and(succeeded(), eq(variables['BumpUpBranch'], 'hello'))
