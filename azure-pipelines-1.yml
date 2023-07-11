@@ -28,7 +28,7 @@ stages:
         inputs:
           targetType: 'inline'
           script: |
-            ##vso[task.setvariable variable=BumpUpBranch;isOutput=true]none
+            echo "##vso[task.setvariable variable=BumpUpBranch;isOutput=true]none"
   
   - stage: test
     variables:
