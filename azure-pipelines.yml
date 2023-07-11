@@ -11,6 +11,16 @@ jobs:
   variables:
     BumpUpBranch: test
   steps:
+
+  - task: PowerShell@2
+    name: test
+    inputs:
+      targetType: 'inline'
+      script: |
+        write-host ${{ parameters.OOBBranch }}
+        write-host '${{ parameters.OOBBranch }}'
+        write-host ('${{ parameters.OOBBranch }}' -eq 'none')
+        write-host (${{ parameters.OOBBranch }} -eq 'none')
   - task: PowerShell@2
     name: test1
     inputs:
