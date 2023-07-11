@@ -28,7 +28,6 @@ jobs:
           Write-Host "not equal none"
           Write-Host ${{ parameters.OOBBranch }}
           write-host ('${{ parameters.OOBBranch }}' -eq 'none')
-          $a = ${{ parameters.OOBBranch }}
           $b = '${{ parameters.OOBBranch }}'
           write-host ($b -eq 'none')
     condition: ${{ ne(parameters.OOBBranch, 'none') }}
