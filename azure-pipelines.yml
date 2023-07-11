@@ -3,7 +3,7 @@ parameters:
 - name: OOBBranch
   displayName: Branch for OOB pipeline
   type: string
-  default: 'none'
+  default: 'false'
 jobs:
 - job: BumpUpVersion
   timeoutInMinutes: 180
@@ -19,24 +19,24 @@ jobs:
       script: |
         write-host ${{ parameters.OOBBranch }}
         write-host '${{ parameters.OOBBranch }}'
-        write-host ('${{ parameters.OOBBranch }}' -eq 'hey')
-    condition: and(succeeded(), eq('${{ parameters.OOBBranch }}', 'hey'))
+        write-host ('${{ parameters.OOBBranch }}' -eq 'false')
+    condition: and(succeeded(), eq('${{ parameters.OOBBranch }}', 'false'))
   - task: PowerShell@2
     name: test1
     inputs:
       targetType: 'inline'
       script: |
-          Write-Host "not equal hey"
+          Write-Host "not equal false"
           Write-Host ${{ parameters.OOBBranch }}
-          write-host ('${{ parameters.OOBBranch }}' -eq 'hey')
+          write-host ('${{ parameters.OOBBranch }}' -eq 'false')
           $b = '${{ parameters.OOBBranch }}'
-          write-host ($b -eq 'hey')
-    condition: and(succeeded(), ne('${{ parameters.OOBBranch }}', 'hey'))
+          write-host ($b -eq 'false')
+    condition: and(succeeded(), ne('${{ parameters.OOBBranch }}', 'false'))
   - task: PowerShell@2
     name: test2
     inputs:
       targetType: 'inline'
       script: |
-          Write-Host "equal hey"
+          Write-Host "equal false"
           Write-Host ${{ parameters.OOBBranch }}
-    condition: and(succeeded(), eq('${{ parameters.OOBBranch }}', 'hey'))
+    condition: and(succeeded(), eq('${{ parameters.OOBBranch }}', 'false'))
