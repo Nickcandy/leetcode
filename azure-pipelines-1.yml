@@ -36,4 +36,4 @@ stages:
     jobs:
     - template: azure-pipelines.yml
       parameters:
-        OOBBranch: 'none'
+        OOBBranch: $[variables.var]
