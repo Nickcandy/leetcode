@@ -19,24 +19,24 @@ jobs:
       script: |
         write-host ${{ parameters.OOBBranch }}
         write-host '${{ parameters.OOBBranch }}'
-        write-host ('${{ parameters.OOBBranch }}' -eq 'none')
-    condition: and(succeeded(), eq('${{ parameters.OOBBranch }}', 'none'))
+        write-host ('${{ parameters.OOBBranch }}' -eq 'hey')
+    condition: and(succeeded(), eq('${{ parameters.OOBBranch }}', 'hey'))
   - task: PowerShell@2
     name: test1
     inputs:
       targetType: 'inline'
       script: |
-          Write-Host "not equal none"
+          Write-Host "not equal hey"
           Write-Host ${{ parameters.OOBBranch }}
-          write-host ('${{ parameters.OOBBranch }}' -eq 'none')
+          write-host ('${{ parameters.OOBBranch }}' -eq 'hey')
           $b = '${{ parameters.OOBBranch }}'
-          write-host ($b -eq 'none')
-    condition: and(succeeded(), ne('${{ parameters.OOBBranch }}', 'none'))
+          write-host ($b -eq 'hey')
+    condition: and(succeeded(), ne('${{ parameters.OOBBranch }}', 'hey'))
   - task: PowerShell@2
     name: test2
     inputs:
       targetType: 'inline'
       script: |
-          Write-Host "equal none"
+          Write-Host "equal hey"
           Write-Host ${{ parameters.OOBBranch }}
-    condition: and(succeeded(), eq('${{ parameters.OOBBranch }}', 'none'))
+    condition: and(succeeded(), eq('${{ parameters.OOBBranch }}', 'hey'))
