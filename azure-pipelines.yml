@@ -20,7 +20,7 @@ jobs:
         write-host ${{ parameters.OOBBranch }}
         write-host '${{ parameters.OOBBranch }}'
         write-host ('${{ parameters.OOBBranch }}' -eq 'none')
-    condition: contains('parameters.OOBBranch', 'none')
+    condition: and(succeeded(), eq('${{ parameters.OOBBranch }}', 'none'))
   - task: PowerShell@2
     name: test1
     inputs:
@@ -39,4 +39,4 @@ jobs:
       script: |
           Write-Host "equal none"
           Write-Host ${{ parameters.OOBBranch }}
-    condition: ${{ eq(parameters.OOBBranch, 'none') }}
+    condition: and(succeeded(), eq('${{ parameters.OOBBranch }}', 'none'))
