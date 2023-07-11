@@ -4,29 +4,26 @@ parameters:
   displayName: Branch for OOB pipeline
   type: string
   default: 'none'
-stages:
-- stage: OOBRelease
-  displayName: OOBRelease
-  jobs:
-  - job: BumpUpVersion
-    timeoutInMinutes: 180
-    pool: pool-windows-2019
-    variables:
-      BumpUpBranch: test
-    steps:
-    - task: PowerShell@2
-      name: test1
-      inputs:
-        targetType: 'inline'
-        script: |
-           Write-Host "not equal none"
-           Write-Host ${{ parameters.OOBBranch }}
-      condition: ne('${{ parameters.OOBBranch }}', 'none')
-    - task: PowerShell@2
-      name: test2
-      inputs:
-        targetType: 'inline'
-        script: |
-           Write-Host "equal none"
-           Write-Host ${{ parameters.OOBBranch }}
-      condition: eq('${{ parameters.OOBBranch }}', 'none')
+jobs:
+- job: BumpUpVersion
+  timeoutInMinutes: 180
+  pool: pool-windows-2019
+  variables:
+    BumpUpBranch: test
+  steps:
+  - task: PowerShell@2
+    name: test1
+    inputs:
+      targetType: 'inline'
+      script: |
+          Write-Host "not equal none"
+          Write-Host ${{ parameters.OOBBranch }}
+    condition: ne('${{ parameters.OOBBranch }}', 'none')
+  - task: PowerShell@2
+    name: test2
+    inputs:
+      targetType: 'inline'
+      script: |
+          Write-Host "equal none"
+          Write-Host ${{ parameters.OOBBranch }}
+    condition: eq('${{ parameters.OOBBranch }}', 'none')
