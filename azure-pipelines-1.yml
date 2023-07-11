@@ -1,7 +1,21 @@
 stages:
   - stage: OOBRelease
+    variables:
+      BumpUpBranch: hello
     displayName: OOBRelease
     jobs:
+    - job: test
+      timeoutInMinutes: 180
+      steps:
+      - task: PowerShell@2
+        name: test
+        inputs:
+          targetType: 'inline'
+          script: |
+            write-host $(BumpUpBranch)
+            write-host '$(BumpUpBranch)'
+            write-host '$(BumpUpBranch)' -eq 'none'
+            write-host $(BumpUpBranch) -eq 'none'
     - job: BumpUpVersion
       timeoutInMinutes: 180
       pool: pool-windows-2019
