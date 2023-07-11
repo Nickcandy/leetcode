@@ -31,7 +31,7 @@ jobs:
           write-host ('${{ parameters.OOBBranch }}' -eq 'none')
           $b = '${{ parameters.OOBBranch }}'
           write-host ($b -eq 'none')
-    condition: ne(parameters.OOBBranch, 'none')
+    condition: ne('parameters.OOBBranch', 'none')
   - task: PowerShell@2
     name: test2
     inputs:
@@ -39,4 +39,4 @@ jobs:
       script: |
           Write-Host "equal none"
           Write-Host ${{ parameters.OOBBranch }}
-    condition: eq(parameters.OOBBranch, 'none') }}
+    condition: eq(parameters.OOBBranch, 'none') 
