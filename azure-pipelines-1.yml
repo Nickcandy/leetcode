@@ -1,7 +1,7 @@
+variables:
+  BumpUpBranch: hello
 stages:
   - stage: OOBRelease
-    variables:
-      BumpUpBranch: hello
     displayName: OOBRelease
     jobs:
     - job: test
@@ -34,20 +34,6 @@ stages:
     variables:
       BumpUpBranch: $[stageDependencies.OOBRelease.BumpUpVersion.outputs['outputinfo.BumpUpBranch']]
     jobs:
-    - job: test
-      timeoutInMinutes: 180
-      steps:
-      - task: PowerShell@2
-        name: test
-        inputs:
-          targetType: 'inline'
-          script: |
-            write-host $(BumpUpBranch)
-            write-host '$(BumpUpBranch)'
-            write-host '$(BumpUpBranch)' -eq 'none'
-            write-host $(BumpUpBranch) -eq 'none'
-
-
     - template: azure-pipelines.yml
       parameters:
         OOBBranch: '$(BumpUpBranch)'
