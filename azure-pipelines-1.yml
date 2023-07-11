@@ -36,4 +36,4 @@ stages:
     jobs:
     - template: azure-pipelines.yml
       parameters:
-        OOBBranch: '$[variables.var]'
+        OOBBranch: '$[variables.BumpUpBranch]'
