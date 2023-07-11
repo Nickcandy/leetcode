@@ -1,4 +1,25 @@
 stages:
-    - template: ./azure-pipelines.yml
+  - stage: OOBRelease
+    displayName: OOBRelease
+    jobs:
+    - job: BumpUpVersion
+      timeoutInMinutes: 180
+      pool: pool-windows-2019
+      variables:
+        NeedBumpUp: true
+      steps:
+      - task: PowerShell@2
+        displayName: get changelog info
+        name: outputinfo
+        inputs:
+          targetType: 'inline'
+          script: |
+            ##vso[task.setvariable variable=BumpUpBranch;isOutput=true]none
+  
+  - stage: test
+    variables:
+      BumpUpBranch: $[stageDependencies.OOBRelease.BumpUpVersion.outputs['outputinfo.BumpUpBranch']]
+    jobs:
+    - template: azure-pipelines.yml
       parameters:
         OOBBranch: 'none'
