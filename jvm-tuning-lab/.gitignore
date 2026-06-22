@@ -1,0 +1,5 @@
+target/
+*.log
+*.hprof
+*.jfr
+hs_err_pid*
